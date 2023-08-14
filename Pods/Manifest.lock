@@ -1,0 +1,46 @@
+PODS:
+  - ARCore/AugmentedFaces (1.33.0):
+    - ARCore/Base (~> 1.33)
+    - GoogleDataTransport (~> 9.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - ARCore/Base (1.33.0):
+    - GoogleDataTransport (~> 9.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - CHCSVParser (2.1.0)
+  - GoogleDataTransport (9.2.0):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Environment (7.8.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.1.1)
+
+DEPENDENCIES:
+  - ARCore/AugmentedFaces (~> 1.33.0)
+  - CHCSVParser
+
+SPEC REPOS:
+  trunk:
+    - ARCore
+    - CHCSVParser
+    - GoogleDataTransport
+    - GoogleUtilities
+    - nanopb
+    - PromisesObjC
+
+SPEC CHECKSUMS:
+  ARCore: a5818d47ba3c1a523b4c0bf80ee0a479fb68c5af
+  CHCSVParser: 3bcc7bdb72111a31222e95d57eacceefe4e537e8
+  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
+  GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+
+PODFILE CHECKSUM: 0b99592ebd26a3a48d33d94d14a44278c8ea87cf
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,15 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+ENABLE_BITCODE = NO
+EXCLUDED_ARCHS[sdk=iphoneos*] = armv7
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = i386
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CHCSVParser" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities" "${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC" "${PODS_CONFIGURATION_BUILD_DIR}/nanopb" "${PODS_ROOT}/ARCore/AugmentedFaces/Frameworks" "${PODS_ROOT}/ARCore/Base/Frameworks" "${PODS_XCFRAMEWORKS_BUILD_DIR}/ARCore/AugmentedFaces" "${PODS_XCFRAMEWORKS_BUILD_DIR}/ARCore/Base"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CHCSVParser/CHCSVParser.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ARCore" $(inherited) ${PODS_ROOT}/ARCore/Base/Sources
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/CHCSVParser/CHCSVParser.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/CHCSVParser"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"dl" -l"m" -l"sqlite3" -l"z" -framework "ARCoreAugmentedFaces" -framework "ARCoreBase" -framework "AVFoundation" -framework "Accelerate" -framework "CHCSVParser" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreVideo" -framework "FBLPromises" -framework "Foundation" -framework "GLKit" -framework "GoogleDataTransport" -framework "GoogleUtilities" -framework "ImageIO" -framework "Metal" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "nanopb"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

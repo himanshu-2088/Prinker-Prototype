@@ -1,0 +1,2 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ARCore/AugmentedFaces/ARCoreAugmentedFaces.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ARCore/Base/ARCoreBase.framework
