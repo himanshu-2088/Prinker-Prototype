@@ -7,7 +7,9 @@ import MFEMakeupKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var browLabel: UILabel!
+    @IBOutlet weak var leftEyebrowLenghtLabel: UILabel!
+    @IBOutlet weak var rightEyebrowLengthLabel: UILabel!
+    
     @IBOutlet private var makeupView: MFEMakeupView?
     
     override func viewDidLoad() {
@@ -31,7 +33,8 @@ class ViewController: UIViewController {
         MFEMakeupRenderer.shared().shouldOutputBrowMasks = true
         
         let renderListener = ExampleRenderListener()
-        renderListener.outputLabel = browLabel
+        renderListener.leftEyebrowLengthLabel = leftEyebrowLenghtLabel
+        renderListener.rightEyebrowLengthLabel = rightEyebrowLengthLabel
         MFEMakeupRenderer.shared().add(renderListener)
         
         // Load the required renderer resources

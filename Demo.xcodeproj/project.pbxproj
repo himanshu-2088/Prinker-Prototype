@@ -97,13 +97,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		93A4EEF92A8A58AD00A20266 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		CED3594E208FCD6D00022BB0 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +118,6 @@
 		CED35959208FCD6D00022BB0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				93A4EEF92A8A58AD00A20266 /* ViewController */,
 				9343E4B72A8A468D0036F476 /* Helpers */,
 				9343E4B62A8A46890036F476 /* Extentions */,
 				CED3595A208FCD6D00022BB0 /* AppDelegate.swift */,
@@ -432,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = TN4V5K6NT6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -439,12 +432,13 @@
 					"${PROJECT_DIR}/../",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Prinker Prototype";
+				INFOPLIST_KEY_CFBundleDisplayName = "Modiface ARKit demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -468,6 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = TN4V5K6NT6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -475,12 +470,13 @@
 					"${PROJECT_DIR}/../",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Prinker Prototype";
+				INFOPLIST_KEY_CFBundleDisplayName = "Modiface ARKit demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
