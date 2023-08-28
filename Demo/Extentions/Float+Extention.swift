@@ -14,7 +14,7 @@ extension Float {
     }
     
     func metersToCentimeters() -> String {
-        return String(format: "%.2f", self * 100)
+        return String(format: "%.2f", self / 10)
     }
 }
 

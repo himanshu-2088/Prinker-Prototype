@@ -62,18 +62,19 @@ extension TrackFaceViewController: ARSCNViewDelegate {
         }
         
         let points: [ARFaceAnchor.VerticesAndProjection] = faceAnchor.convertVectorsToCGPoints(to: sceneView)
+        let vectorPointsArray = points.map{ $0.vertex }
         
         DispatchQueue.main.async {
             
-            let leftEyebrowDistance1 = VectorHelper.distance(betweenPoints: SCNVector3(points.map{ $0.vertex }[0]), point2: SCNVector3(points.map{ $0.vertex }[1]))
-
-            let leftEyebrowDistance2 = VectorHelper.distance(betweenPoints: SCNVector3(points.map{ $0.vertex }[1]), point2: SCNVector3(points.map{ $0.vertex }[2]))
-
-            let leftEyebrowTotalDistance = (leftEyebrowDistance1 + leftEyebrowDistance2).metersToCentimeters()
-
-            let rightEyebrowDistance1 = Float(VectorHelper.distance(betweenPoints: SCNVector3(points.map{ $0.vertex }[3]), point2: SCNVector3(points.map{ $0.vertex }[4])))
+            let leftEyebrowDistance1 = VectorHelper.distance(betweenPoints: vectorPointsArray[0], point2: vectorPointsArray[1])
             
-            let rightEyebrowDistance2 = Float(VectorHelper.distance(betweenPoints: SCNVector3(points.map{ $0.vertex }[4]), point2: SCNVector3(points.map{ $0.vertex }[5])))
+            let leftEyebrowDistance2 = VectorHelper.distance(betweenPoints: vectorPointsArray[1], point2: vectorPointsArray[2])
+            
+            let leftEyebrowTotalDistance = (leftEyebrowDistance1 + leftEyebrowDistance2).metersToCentimeters()
+            
+            let rightEyebrowDistance1 = VectorHelper.distance(betweenPoints: vectorPointsArray[3], point2: vectorPointsArray[4])
+            
+            let rightEyebrowDistance2 = VectorHelper.distance(betweenPoints: vectorPointsArray[4], point2: vectorPointsArray[5])
             
             let rightEyebrowTotalDistance = (rightEyebrowDistance1 + rightEyebrowDistance2).metersToCentimeters()
             
