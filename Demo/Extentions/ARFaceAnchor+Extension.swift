@@ -12,7 +12,7 @@ import SceneKit
 extension ARFaceAnchor {
     
     struct VerticesAndProjection {
-        var vertex: SIMD3<Float>
+        var vertex: SCNVector3
         var projected: CGPoint
     }
     
@@ -29,7 +29,7 @@ extension ARFaceAnchor {
             let pworld = transform * simd_float4x4(col, col, col, pos)
             let vect = view.projectPoint(SCNVector3(pworld.position.x, pworld.position.y, pworld.position.z))
             let p = CGPoint(x: CGFloat(vect.x), y: CGFloat(vect.y))
-            verticesArray.append(VerticesAndProjection(vertex: vertex, projected: p))
+            verticesArray.append(VerticesAndProjection(vertex: vect, projected: p))
         }
         return verticesArray
     }
